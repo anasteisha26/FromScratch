@@ -13,3 +13,11 @@ def euc_d(vec1, vec2):
     print("An error occured")
 
   return result
+
+def generate_centroid_coordinates():
+  arr = []
+
+  for i in range(0, len(list_highest)):
+    arr.append(random.uniform(list_lowest[i]-3, list_highest[i]+3))
+  arr = np.array(arr)
+  return arr
